@@ -1,9 +1,10 @@
 name: REI折扣监控
 
 on:
+  push:
+  workflow_dispatch:
   schedule:
     - cron: "*/15 * * * *"
-  workflow_dispatch:
 
 jobs:
   monitor:
